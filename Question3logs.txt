@@ -1,0 +1,131 @@
+C:\Users\TC>wsl
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo groupadd devopsgroup
+[sudo] password for isiri:
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo useradd -m -g devopsgroup devopsuser
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo passwd devops_user
+New password:
+Retype new password:
+passwd: password updated successfully
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo mkdir /shared_folder
+mkdir: cannot create directory ‘/shared_folder’: File exists
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo mkdir /sharedfolder
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo chown :devopsgroup /shared_older
+chown: cannot access '/shared_older': No such file or directory
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo chmod 770 /sharedfolder
+isiri@Laptop-TC:/mnt/c/Users/TC$ ls /home
+devops_user  devopsuser  isiri
+isiri@Laptop-TC:/mnt/c/Users/TC$ ls -al
+total 18508
+drwxrwxrwx 1 isiri isiri      512 Sep  9 11:04  .
+dr-xr-xr-x 1 isiri isiri      512 May 12 05:35  ..
+drwxrwxrwx 1 isiri isiri      512 Jul 12  2023  .3T
+drwxrwxrwx 1 isiri isiri      512 Jul 12  2023  .DbSchema
+drwxrwxrwx 1 isiri isiri      512 Mar 19  2024  .Neo4jDesktop
+drwxrwxrwx 1 isiri isiri      512 Jul  6  2023  .android
+drwxrwxrwx 1 isiri isiri      512 Jul 27  2023  .astropy
+drwxrwxrwx 1 isiri isiri      512 Jul 17  2023  .aws
+drwxrwxrwx 1 isiri isiri      512 Jul 17  2023  .azure
+-rwxrwxrwx 1 isiri isiri    12201 Sep  2  2024  .bash_history
+drwxrwxrwx 1 isiri isiri      512 Dec  7  2023  .cache
+drwxrwxrwx 1 isiri isiri      512 Sep  8 06:44  .codeium
+drwxrwxrwx 1 isiri isiri      512 Jul 28  2023  .conda
+drwxrwxrwx 1 isiri isiri      512 Jul 22  2024  .config
+drwxrwxrwx 1 isiri isiri      512 Oct 19  2023  .crossnote
+drwxrwxrwx 1 isiri isiri      512 Sep  9 10:24  .docker
+-rwxrwxrwx 1 isiri isiri       93 Jan  6  2024  .gitconfig
+drwxrwxrwx 1 isiri isiri      512 Jul 15  2023  .idlerc
+drwxrwxrwx 1 isiri isiri      512 Jul 26  2023  .ipython
+drwxrwxrwx 1 isiri isiri      512 Jul 29  2023  .jupyter
+drwxrwxrwx 1 isiri isiri      512 Aug  8  2023  .keras
+drwxrwxrwx 1 isiri isiri      512 Jul 20  2023  .kube
+-rwxrwxrwx 1 isiri isiri       20 Aug 28 06:55  .lesshst
+drwxrwxrwx 1 isiri isiri      512 Jul 19  2023  .m2
+drwxrwxrwx 1 isiri isiri      512 Jul 28  2023  .matplotlib
+drwxrwxrwx 1 isiri isiri      512 Sep  9 06:44  .minikube
+drwxrwxrwx 1 isiri isiri      512 Jul 31 08:32  .ollama
+drwxrwxrwx 1 isiri isiri      512 Jul 20  2023  .openjfx
+-rwxrwxrwx 1 isiri isiri    16758 Oct 19  2023  .pdfbox.cache
+-rwxrwxrwx 1 isiri isiri       81 Jan 18  2024  .python_history
+-rwxrwxrwx 1 isiri isiri      334 Jan 18  2024  .rbql_init_source.py
+drwxrwxrwx 1 isiri isiri      512 Jul 19  2023  .redhat
+drwxrwxrwx 1 isiri isiri      512 Jul 26  2023  .soapuios
+drwxrwxrwx 1 isiri isiri      512 Aug 26 05:26  .ssh
+drwxrwxrwx 1 isiri isiri      512 Mar 16  2024  .sts4
+drwxrwxrwx 1 isiri isiri      512 Jul 12  2023  .swt
+drwxrwxrwx 1 isiri isiri      512 Nov 23  2023  .torch
+-rwxrwxrwx 1 isiri isiri     9322 Jan  6  2024  .viminfo
+drwxrwxrwx 1 isiri isiri      512 Jul  5  2023  .vscode
+drwxrwxrwx 1 isiri isiri      512 Dec 11  2023  .wdm
+drwxrwxrwx 1 isiri isiri      512 Apr  5  2022 '3D Objects'
+drwxrwxrwx 1 isiri isiri      512 May 12 05:35  AppData
+lrwxrwxrwx 1 isiri isiri       31 May 12 05:35 'Application Data' -> /mnt/c/Users/TC/AppData/Roaming
+drwxrwxrwx 1 isiri isiri      512 Aug 29 08:14  Assignment-5-Java
+drwxrwxrwx 1 isiri isiri      512 Sep  9 11:08  AssignmentCloud
+drwxrwxrwx 1 isiri isiri      512 Sep  9 10:23  Assignment_cloud
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41  Contacts
+lrwxrwxrwx 1 isiri isiri       59 May 12 05:35  Cookies -> /mnt/c/Users/TC/AppData/Local/Microsoft/Windows/INetCookies
+drwxrwxrwx 1 isiri isiri      512 Sep  8 08:23  Desktop
+drwxrwxrwx 1 isiri isiri      512 Sep  1 12:33  Documents
+drwxrwxrwx 1 isiri isiri      512 Sep  9 07:10  Downloads
+drwxrwxrwx 1 isiri isiri      512 Sep  3 05:00  ERDiagram---RestuarentManagementSystem
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41  Favorites
+drwxrwxrwx 1 isiri isiri      512 Aug 28 06:57  IdeaProjects
+drwxrwxrwx 1 isiri isiri      512 Sep  9 10:59  IntelGraphicsProfiles
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41  Links
+lrwxrwxrwx 1 isiri isiri       29 May 12 05:35 'Local Settings' -> /mnt/c/Users/TC/AppData/Local
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41  Music
+lrwxrwxrwx 1 isiri isiri       25 May 12 05:35 'My Documents' -> /mnt/c/Users/TC/Documents
+-rwxrwxrwx 1 isiri isiri 10485760 Sep  8 12:43  NTUSER.DAT
+-rwxrwxrwx 1 isiri isiri  1048576 Sep  9 10:59  NTUSER.DAT{9f23c63f-2ef2-11f0-b2c8-88de4005f105}.TxR.0.regtrans-ms
+-rwxrwxrwx 1 isiri isiri  1048576 Sep  9 10:59  NTUSER.DAT{9f23c63f-2ef2-11f0-b2c8-88de4005f105}.TxR.1.regtrans-ms
+-rwxrwxrwx 1 isiri isiri  1048576 Sep  9 10:59  NTUSER.DAT{9f23c63f-2ef2-11f0-b2c8-88de4005f105}.TxR.2.regtrans-ms
+-rwxrwxrwx 1 isiri isiri    65536 Sep  9 10:59  NTUSER.DAT{9f23c63f-2ef2-11f0-b2c8-88de4005f105}.TxR.blf
+-rwxrwxrwx 1 isiri isiri    65536 Jul 31 09:02  NTUSER.DAT{9f23c640-2ef2-11f0-b2c8-88de4005f105}.TM.blf
+-rwxrwxrwx 1 isiri isiri   524288 Jul 31 09:02  NTUSER.DAT{9f23c640-2ef2-11f0-b2c8-88de4005f105}.TMContainer00000000000000000001.regtrans-ms
+-rwxrwxrwx 1 isiri isiri   524288 May 12 05:35  NTUSER.DAT{9f23c640-2ef2-11f0-b2c8-88de4005f105}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 isiri isiri       67 May 12 05:35  NetHood -> '/mnt/c/Users/TC/AppData/Roaming/Microsoft/Windows/Network Shortcuts'
+drwxrwxrwx 1 isiri isiri      512 Sep  7 12:39  NoSql-Modelling-A-Blog
+drwxrwxrwx 1 isiri isiri      512 Apr  5  2022  OneDrive
+drwxrwxrwx 1 isiri isiri      512 Jul 31 08:12  Pictures
+drwxrwxrwx 1 isiri isiri      512 Jul 19  2023  Postman
+lrwxrwxrwx 1 isiri isiri       67 May 12 05:35  PrintHood -> '/mnt/c/Users/TC/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'
+lrwxrwxrwx 1 isiri isiri       56 May 12 05:35  Recent -> /mnt/c/Users/TC/AppData/Roaming/Microsoft/Windows/Recent
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41 'Saved Games'
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41  Searches
+lrwxrwxrwx 1 isiri isiri       56 May 12 05:35  SendTo -> /mnt/c/Users/TC/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 isiri isiri       60 May 12 05:35 'Start Menu' -> '/mnt/c/Users/TC/AppData/Roaming/Microsoft/Windows/Start Menu'
+lrwxrwxrwx 1 isiri isiri       59 May 12 05:35  Templates -> /mnt/c/Users/TC/AppData/Roaming/Microsoft/Windows/Templates
+drwxrwxrwx 1 isiri isiri      512 May 12 05:41  Videos
+drwxrwxrwx 1 isiri isiri      512 Sep  9 09:51  cloudassignment
+drwxrwxrwx 1 isiri isiri      512 Sep  9 10:53  linux_assignment
+drwxrwxrwx 1 isiri isiri      512 Jun  4  2024  llm_product_qa
+-rwxrwxrwx 1 isiri isiri  2653184 May 12 05:35  ntuser.dat.LOG1
+-rwxrwxrwx 1 isiri isiri  1441792 May 12 05:35  ntuser.dat.LOG2
+-rwxrwxrwx 1 isiri isiri       20 May 12 05:41  ntuser.ini
+-rwxrwxrwx 1 isiri isiri        0 Jan  8  2024  outbase.txt
+-rwxrwxrwx 1 isiri isiri        0 Jan  8  2024  outputbase.txt
+drwxrwxrwx 1 isiri isiri      512 Aug  7  2023  scikit_learn_data
+isiri@Laptop-TC:/mnt/c/Users/TC$ ll /shared
+ls: cannot access '/shared': No such file or directory
+isiri@Laptop-TC:/mnt/c/Users/TC$ sudo su
+root@Laptop-TC:/mnt/c/Users/TC# ll /sharedfolder
+total 8
+drwxrwx---  2 root root 4096 Sep  9 11:14 ./
+drwxr-xr-x 25 root root 4096 Sep  9 11:14 ../
+root@Laptop-TC:/mnt/c/Users/TC#  sudo chown :devopsgroup /shared_folder
+root@Laptop-TC:/mnt/c/Users/TC# sudo chmod 770 /sharedfolder
+root@Laptop-TC:/mnt/c/Users/TC# ll /sharedfolder
+total 8
+drwxrwx---  2 root root 4096 Sep  9 11:14 ./
+drwxr-xr-x 25 root root 4096 Sep  9 11:14 ../
+root@Laptop-TC:/mnt/c/Users/TC# ll /shared_older
+ls: cannot access '/shared_older': No such file or directory
+root@Laptop-TC:/mnt/c/Users/TC#
+root@Laptop-TC:/mnt/c/Users/TC#
+root@Laptop-TC:/mnt/c/Users/TC#
+root@Laptop-TC:/mnt/c/Users/TC#
+root@Laptop-TC:/mnt/c/Users/TC#
+root@Laptop-TC:/mnt/c/Users/TC# ll /shared_folder
+total 8
+drwxrwx---  2 root devopsgroup 4096 Sep  9 10:47 ./
+drwxr-xr-x 25 root root        4096 Sep  9 11:14 ../

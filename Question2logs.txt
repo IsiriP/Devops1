@@ -1,0 +1,644 @@
+isiri@Laptop-TC:/mnt/c/Users/TC$ mkdir assignment_cloud
+mkdir: cannot create directory ‘assignment_cloud’: File exists
+isiri@Laptop-TC:/mnt/c/Users/TC$ mkdir AssignmentCloud
+isiri@Laptop-TC:/mnt/c/Users/TC$ cd
+.3T/                                    .kube/                                  Assignment-5-Java/                      NoSql-Modelling-A-Blog/
+.DbSchema/                              .m2/                                    AssignmentCloud/                        OneDrive/
+.Neo4jDesktop/                          .matplotlib/                            Assignment_cloud/                       Pictures/
+.android/                               .minikube/                              Contacts/                               Postman/
+.astropy/                               .ollama/                                Cookies/                                PrintHood/
+.aws/                                   .openjfx/                               Desktop/                                Recent/
+.azure/                                 .redhat/                                Documents/                              Saved Games/
+.cache/                                 .soapuios/                              Downloads/                              Searches/
+.codeium/                               .ssh/                                   ERDiagram---RestuarentManagementSystem/ SendTo/
+.conda/                                 .sts4/                                  Favorites/                              Start Menu/
+.config/                                .swt/                                   IdeaProjects/                           Templates/
+.crossnote/                             .torch/                                 IntelGraphicsProfiles/                  Videos/
+.docker/                                .vscode/                                Links/                                  cloudassignment/
+.idlerc/                                .wdm/                                   Local Settings/                         linux_assignment/
+.ipython/                               3D Objects/                             Music/                                  llm_product_qa/
+.jupyter/                               AppData/                                My Documents/                           scikit_learn_data/
+.keras/                                 Application Data/                       NetHood/
+isiri@Laptop-TC:/mnt/c/Users/TC$ cd AssignmentCloud
+isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ pwd
+/mnt/c/Users/TC/AssignmentCloud
+isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ nano systemdetails.sh
+isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ cat systemdetails.sh
+#!/bin/bash
+
+LOG_FILE="/var/log/system_details.log"
+
+# Collect system info
+{
+echo "System Report at $(date)"
+echo "CPU Info:"
+lscpu | grep "Model name"
+
+echo -e "\nMemory Usage:"
+free -h
+
+echo -e "\nDisk Usage:"
+df -h
+
+echo -e "\nUptime:"
+uptime
+
+echo
+} >> "$LOG_FILE"
+isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ crontab -l
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+*/2 * * * * /mnt/c/Users/TC/Assignment_cloud/details.sh
+isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ cat /mnt/c/Users/TC/Assignment_cloud/details.sh
+#!/bin/bash
+
+LOG_FILE="/mnt/c/Users/TC/Assignment_cloud/detailslog/systemdetails"
+
+# Collect system info
+{
+echo "System Report at $(date)"
+echo "CPU Info:"
+lscpu | grep "Model name"
+
+echo -e "\nMemory Usage:"
+free -h
+
+echo -e "\nDisk Usage:"
+df -h
+
+echo -e "\nUptime:"
+uptime
+
+echo
+} >> "$LOG_FILE"
+isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ cat /mnt/c/Users/TC/Assignment_cloud/detailslog/systemdetails
+System Report at Tue Sep  9 10:28:11 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.5Gi       4.3Gi       133Mi       2.1Gi       6.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  100K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:28:11 up  4:25,  2 users,  load average: 0.37, 0.93, 1.10
+
+System Report at Tue Sep  9 10:36:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.5Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:36:01 up  4:34,  2 users,  load average: 2.11, 1.46, 1.28
+
+System Report at Tue Sep  9 10:38:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.5Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:38:01 up  4:36,  2 users,  load average: 2.05, 1.47, 1.29
+
+System Report at Tue Sep  9 10:40:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.5Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:40:01 up  4:38,  2 users,  load average: 1.31, 1.39, 1.29
+
+System Report at Tue Sep  9 10:42:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:42:01 up  4:41,  2 users,  load average: 1.10, 1.31, 1.27
+
+System Report at Tue Sep  9 10:44:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:44:01 up  4:43,  2 users,  load average: 0.85, 1.13, 1.21
+
+System Report at Tue Sep  9 10:46:02 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:46:02 up  4:45,  2 users,  load average: 1.87, 1.50, 1.33
+
+System Report at Tue Sep  9 10:48:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.5Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:48:01 up  4:47,  2 users,  load average: 1.85, 1.57, 1.37
+
+System Report at Tue Sep  9 10:50:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:50:01 up  4:49,  2 users,  load average: 1.52, 1.61, 1.42
+
+System Report at Tue Sep  9 10:52:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:52:01 up  4:52,  2 users,  load average: 0.83, 1.27, 1.31
+
+System Report at Tue Sep  9 10:54:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.1Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  540K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:54:01 up  4:54,  2 users,  load average: 1.86, 1.66, 1.45
+
+System Report at Tue Sep  9 10:56:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.6Gi       4.3Gi       133Mi       2.2Gi       6.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  628K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdd                                 1007G   59M  956G   1% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+drivers                                   476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  2.3G  954G   1% /
+none                                      3.9G  104K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.9G  2.7M  3.9G   1% /init
+none                                      3.9G  548K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G     0  3.9G   0% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       476G  130G  347G  28% /mnt/c
+/dev/loop0                                598M  598M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/1000
+tmpfs                                     3.9G   16K  3.9G   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  476G  130G  347G  28% /Docker/host
+
+Uptime:
+ 10:56:01 up  4:56,  3 users,  load average: 1.44, 1.67, 1.49
+
+System Report at Tue Sep  9 11:02:02 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       462Mi       6.8Gi       3.4Mi       629Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.3G  954G   1% /
+none            3.9G   72K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  504K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             476G  130G  347G  28% /mnt/c
+tmpfs           3.9G   16K  3.9G   1% /run/user/1000
+
+Uptime:
+ 11:02:02 up 0 min,  1 user,  load average: 0.09, 0.03, 0.01
+
+System Report at Tue Sep  9 11:04:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       464Mi       6.8Gi       3.4Mi       637Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         476G  129G  348G  28% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.3G  954G   1% /
+none            3.9G   72K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  504K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             476G  129G  348G  28% /mnt/c
+tmpfs           3.9G   16K  3.9G   1% /run/user/1000
+
+Uptime:
+ 11:04:01 up 2 min,  1 user,  load average: 0.01, 0.02, 0.00
+
+System Report at Tue Sep  9 11:06:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       465Mi       6.8Gi       3.4Mi       640Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         476G  129G  347G  28% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.3G  954G   1% /
+none            3.9G   72K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  504K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             476G  129G  347G  28% /mnt/c
+tmpfs           3.9G   16K  3.9G   1% /run/user/1000
+
+Uptime:
+ 11:06:01 up 4 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+System Report at Tue Sep  9 11:08:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       465Mi       6.8Gi       3.4Mi       641Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.3G  954G   1% /
+none            3.9G   76K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  504K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             476G  130G  347G  28% /mnt/c
+tmpfs           3.9G   16K  3.9G   1% /run/user/1000
+
+Uptime:
+ 11:08:02 up 7 min,  1 user,  load average: 0.08, 0.02, 0.01
+
+System Report at Tue Sep  9 11:10:01 UTC 2025
+CPU Info:
+Model name:                           Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       468Mi       6.8Gi       3.4Mi       641Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         476G  130G  347G  28% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.3G  954G   1% /
+none            3.9G   76K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  504K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             476G  130G  347G  28% /mnt/c
+tmpfs           3.9G   16K  3.9G   1% /run/user/1000
+
+Uptime:
+ 11:10:01 up 9 min,  1 user,  load average: 0.01, 0.00, 0.00
