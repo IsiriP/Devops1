@@ -105,26 +105,7 @@ drwxrwxrwx 1 isiri isiri      512 Jun  4  2024  llm_product_qa
 -rwxrwxrwx 1 isiri isiri        0 Jan  8  2024  outbase.txt
 -rwxrwxrwx 1 isiri isiri        0 Jan  8  2024  outputbase.txt
 drwxrwxrwx 1 isiri isiri      512 Aug  7  2023  scikit_learn_data
-isiri@Laptop-TC:/mnt/c/Users/TC$ ll /shared
-ls: cannot access '/shared': No such file or directory
 isiri@Laptop-TC:/mnt/c/Users/TC$ sudo su
-root@Laptop-TC:/mnt/c/Users/TC# ll /sharedfolder
-total 8
-drwxrwx---  2 root root 4096 Sep  9 11:14 ./
-drwxr-xr-x 25 root root 4096 Sep  9 11:14 ../
-root@Laptop-TC:/mnt/c/Users/TC#  sudo chown :devopsgroup /shared_folder
-root@Laptop-TC:/mnt/c/Users/TC# sudo chmod 770 /sharedfolder
-root@Laptop-TC:/mnt/c/Users/TC# ll /sharedfolder
-total 8
-drwxrwx---  2 root root 4096 Sep  9 11:14 ./
-drwxr-xr-x 25 root root 4096 Sep  9 11:14 ../
-root@Laptop-TC:/mnt/c/Users/TC# ll /shared_older
-ls: cannot access '/shared_older': No such file or directory
-root@Laptop-TC:/mnt/c/Users/TC#
-root@Laptop-TC:/mnt/c/Users/TC#
-root@Laptop-TC:/mnt/c/Users/TC#
-root@Laptop-TC:/mnt/c/Users/TC#
-root@Laptop-TC:/mnt/c/Users/TC#
 root@Laptop-TC:/mnt/c/Users/TC# ll /shared_folder
 total 8
 drwxrwx---  2 root devopsgroup 4096 Sep  9 10:47 ./

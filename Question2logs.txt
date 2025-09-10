@@ -1,24 +1,6 @@
 isiri@Laptop-TC:/mnt/c/Users/TC$ mkdir assignment_cloud
 mkdir: cannot create directory ‘assignment_cloud’: File exists
 isiri@Laptop-TC:/mnt/c/Users/TC$ mkdir AssignmentCloud
-isiri@Laptop-TC:/mnt/c/Users/TC$ cd
-.3T/                                    .kube/                                  Assignment-5-Java/                      NoSql-Modelling-A-Blog/
-.DbSchema/                              .m2/                                    AssignmentCloud/                        OneDrive/
-.Neo4jDesktop/                          .matplotlib/                            Assignment_cloud/                       Pictures/
-.android/                               .minikube/                              Contacts/                               Postman/
-.astropy/                               .ollama/                                Cookies/                                PrintHood/
-.aws/                                   .openjfx/                               Desktop/                                Recent/
-.azure/                                 .redhat/                                Documents/                              Saved Games/
-.cache/                                 .soapuios/                              Downloads/                              Searches/
-.codeium/                               .ssh/                                   ERDiagram---RestuarentManagementSystem/ SendTo/
-.conda/                                 .sts4/                                  Favorites/                              Start Menu/
-.config/                                .swt/                                   IdeaProjects/                           Templates/
-.crossnote/                             .torch/                                 IntelGraphicsProfiles/                  Videos/
-.docker/                                .vscode/                                Links/                                  cloudassignment/
-.idlerc/                                .wdm/                                   Local Settings/                         linux_assignment/
-.ipython/                               3D Objects/                             Music/                                  llm_product_qa/
-.jupyter/                               AppData/                                My Documents/                           scikit_learn_data/
-.keras/                                 Application Data/                       NetHood/
 isiri@Laptop-TC:/mnt/c/Users/TC$ cd AssignmentCloud
 isiri@Laptop-TC:/mnt/c/Users/TC/AssignmentCloud$ pwd
 /mnt/c/Users/TC/AssignmentCloud
